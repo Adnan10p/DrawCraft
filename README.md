@@ -19,19 +19,19 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/igtoth/tracedraw/releases"><b>Download</b></a> &middot;
+  <a href="https://github.com/tracedraw/tracedraw/releases"><b>Download</b></a> &middot;
   <a href="https://apps.microsoft.com/detail/9P50L12VHF33">Microsoft Store</a>* &middot;
-  <a href="https://igtoth.github.io/tracedraw/">Open it in the browser</a> &middot;
+  <a href="https://tracedraw.github.io/tracedraw/">Open it in the browser</a> &middot;
   <a href="docs/features.md">Feature status</a> &middot;
   <a href="CONTRIBUTING.md">Contribute</a>
 </p>
 
 <p align="center">
-  <sub>* The <a href="https://apps.microsoft.com/detail/9P50L12VHF33">Microsoft Store</a> version is signed and updates itself, but each version must pass the Store's certification first (hours to days), so it is often one or more releases behind the <a href="https://github.com/igtoth/tracedraw/releases/latest">latest download</a>.</sub>
+  <sub>* The <a href="https://apps.microsoft.com/detail/9P50L12VHF33">Microsoft Store</a> version is signed and updates itself, but each version must pass the Store's certification first (hours to days), so it is often one or more releases behind the <a href="https://github.com/tracedraw/tracedraw/releases/latest">latest download</a>.</sub>
 </p>
 
 <p align="center">
-  <sub>Alpha: expect bugs. A <code>.cdr</code> file that does not open right? <a href="https://github.com/igtoth/tracedraw/issues/new?template=cdr_file.yml">Send it in an issue</a>: sample files are what improves the reader most.</sub>
+  <sub>Alpha: expect bugs. A <code>.cdr</code> file that does not open right? <a href="https://github.com/tracedraw/tracedraw/issues/new?template=cdr_file.yml">Send it in an issue</a>: sample files are what improves the reader most.</sub>
 </p>
 
 <br>
@@ -347,7 +347,7 @@ see [`docs/behavior/ai-drawing.md`](docs/behavior/ai-drawing.md).
 ## Get started
 
 ```sh
-git clone https://github.com/igtoth/tracedraw
+git clone https://github.com/tracedraw/tracedraw
 cd tracedraw
 cargo run --release -p tracedraw                  # the editor
 cargo run --release -p tracedraw -- drawing.cdr   # open a file
@@ -371,7 +371,7 @@ editor needs X11 or Wayland, libxkbcommon and Mesa.
   estimated: [`docs/system-requirements.md`](docs/system-requirements.md).
 - If the window still does not come up, start it with
   `tracedraw --renderer=gl` and send `tracedraw.log` (in the settings folder) in
-  [an issue](https://github.com/igtoth/tracedraw/issues/new?template=bug_report.yml).
+  [an issue](https://github.com/tracedraw/tracedraw/issues/new?template=bug_report.yml).
 
 New contributors and AI agents: start with [`AGENTS.md`](AGENTS.md), then
 [`CONTRIBUTING.md`](CONTRIBUTING.md) and the pages in [`docs/`](docs/).
@@ -384,7 +384,7 @@ New contributors and AI agents: start with [`AGENTS.md`](AGENTS.md), then
 > and gaps listed in [`docs/blueprint-gaps.md`](docs/blueprint-gaps.md).
 > [`docs/features.md`](docs/features.md) is the honest, row-by-row picture.
 > Issues with a sample file and a screenshot are the most helpful; there
-> are [templates](https://github.com/igtoth/tracedraw/issues/new/choose)
+> are [templates](https://github.com/tracedraw/tracedraw/issues/new/choose)
 > for bugs, `.cdr` files and feature requests.
 >
 > Issues are looked at every day, in the maintainer's spare time, so
@@ -396,19 +396,19 @@ New contributors and AI agents: start with [`AGENTS.md`](AGENTS.md), then
 Anyone who wants to help is welcome, with or without writing code:
 
 - **Try it on your own files.** A `.cdr` that does not open right, sent
-  in [an issue](https://github.com/igtoth/tracedraw/issues/new?template=cdr_file.yml),
+  in [an issue](https://github.com/tracedraw/tracedraw/issues/new?template=cdr_file.yml),
   improves the reader more than anything else (only files you may share).
   Files of versions 4 and 6, and old files that use perspective,
   pattern or PostScript fills, with a picture of how they look, are the
   most wanted: those are the parts still read from few samples.
 - **Open our test files in your copy of the reference program.** The
-  [`interop` branch](https://github.com/igtoth/tracedraw/tree/interop/bundles)
+  [`interop` branch](https://github.com/tracedraw/tracedraw/tree/interop/bundles)
   holds small `.cdr` files saved by TraceDraw in versions 7 to 15; telling
   us which ones open (and which do not) is what lets TraceDraw save
   versions 7 to 13 again. Releases from 2021 on open version 15 and newer only,
   so versions 7 to 14 need CorelDRAW 2020 or older.
 - **Report bugs** with the steps and a screenshot
-  ([bug report](https://github.com/igtoth/tracedraw/issues/new?template=bug_report.yml)).
+  ([bug report](https://github.com/tracedraw/tracedraw/issues/new?template=bug_report.yml)).
 - **Review a translation** in your language (`apps/tracedraw/lang/`):
   native speakers catch what no test does.
 - **Pick a row** of [`docs/features.md`](docs/features.md) that is not
@@ -427,7 +427,7 @@ sign-off line and how pull requests are checked.
 ## Downloads
 
 Each version gets a release with installers for every platform: take the
-[latest release](https://github.com/igtoth/tracedraw/releases/latest)
+[latest release](https://github.com/tracedraw/tracedraw/releases/latest)
 (what changed is in [`CHANGELOG.md`](CHANGELOG.md)). Every push to `main`
 also refreshes the **Nightly build** pre-release. `<version>` in the file
 names is the version number.
@@ -437,7 +437,7 @@ On Windows, TraceDraw is also in the
 warning, and updated by Windows on its own. Each version has to pass the
 Store's certification first, which takes from a few hours to a few days,
 so the Store version is usually one or more releases behind the
-[latest release](https://github.com/igtoth/tracedraw/releases/latest) here.
+[latest release](https://github.com/tracedraw/tracedraw/releases/latest) here.
 For the newest fixes, take the installer below.
 
 <p>
@@ -449,9 +449,9 @@ For the newest fixes, take the installer below.
 | Windows (x64) | [Microsoft Store](https://apps.microsoft.com/detail/9P50L12VHF33) (signed, may lag behind the latest release), `tracedraw-<version>-windows-x86_64-setup.exe` (installer), `tracedraw-<version>-windows-x86_64-portable.zip` (keeps its settings in the `tracedraw-settings` folder beside the program; not signed yet: if SmartScreen warns, More info > Run anyway) |
 | macOS (Apple silicon, Intel) | `tracedraw-<version>-macos-arm64.dmg`, `tracedraw-<version>-macos-x86_64.dmg` (unsigned for now: right-click, Open) |
 | Linux (x86_64, arm64) | `.deb` (`_amd64` or `_arm64`), `tracedraw-<version>-linux-amd64.AppImage` or `-linux-arm64.AppImage`, `tracedraw-<version>-linux-x86_64.tar.gz` or `-linux-arm64.tar.gz` |
-| Web | no download: [open it in the browser](https://igtoth.github.io/tracedraw/), nothing to install |
+| Web | no download: [open it in the browser](https://tracedraw.github.io/tracedraw/), nothing to install |
 | Android (64-bit ARM; x86_64 Chromebooks) | `tracedraw-<version>-android-arm64-v8a-debug.apk` (`-x86_64-` for Chromebooks) in the releases and the nightly, signed with a debug key (remove the installed one before installing a build of another run); `scripts/android/build.sh` builds debug-signed APKs and an App Bundle for Google Play, and CI keeps them with each run as the `android-apk` and `android-aab` artifacts after starting the app on Android emulators (see [`docs/behavior/android.md`](docs/behavior/android.md) and [`docs/android-play.md`](docs/android-play.md)) |
-| Web | no download: [open it in the browser](https://igtoth.github.io/tracedraw/), nothing to install; on an Android tablet, an iPad or a desktop the browser can also install the page as an app that opens full screen and starts offline (see [`docs/behavior/web.md`](docs/behavior/web.md), Installing on a tablet) |
+| Web | no download: [open it in the browser](https://tracedraw.github.io/tracedraw/), nothing to install; on an Android tablet, an iPad or a desktop the browser can also install the page as an app that opens full screen and starts offline (see [`docs/behavior/web.md`](docs/behavior/web.md), Installing on a tablet) |
 
 Each download includes `tracedraw-cli` next to the editor. Packaging sources
 are in [`packaging/`](packaging/); the browser build is described in
@@ -488,7 +488,7 @@ Options > Global > General, "Check for updates at start". The full policy is in
 
 | Document | What it covers |
 |---|---|
-| [User Help](https://igtoth.github.io/tracedraw/help/en/index.html) | the manual, with screenshots; every "?" button and F1 in the app open its page in the interface language |
+| [User Help](https://tracedraw.github.io/tracedraw/help/en/index.html) | the manual, with screenshots; every "?" button and F1 in the app open its page in the interface language |
 | [`docs/features.md`](docs/features.md) | every capability and its status |
 | [`docs/behavior/`](docs/behavior/) | defaults, shortcuts and formulas, tool by tool |
 | [`docs/architecture.md`](docs/architecture.md) | crates, data flow, units, rendering, text |

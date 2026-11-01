@@ -1,6 +1,6 @@
 # The browser version
 
-You can [use TraceDraw in a web browser](https://igtoth.github.io/tracedraw/)
+You can [use TraceDraw in a web browser](https://tracedraw.github.io/tracedraw/)
 with nothing to install. It is the same program as the desktop version,
 built for the browser, so the menus, tools and files are the same.
 

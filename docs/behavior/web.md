@@ -78,7 +78,7 @@ splash, small: "TraceDraw (alpha): open-source vector editor that opens
 which screens it suits (a desktop browser with a mouse and keyboard; on
 a tablet the Touch workspace; a phone screen is too small for editing)
 and links to the desktop downloads
-(`https://github.com/igtoth/tracedraw/releases/latest`), the source
+(`https://github.com/tracedraw/tracedraw/releases/latest`), the source
 code and the issues. When the editor cannot start, the splash says so,
 its bar turns red and the reason shows under it, with the links.
 
@@ -115,7 +115,7 @@ Android or iPadOS program and no app store listing: the installed app is
 the same WebAssembly build, run by the system's browser engine.
 
 - Android tablet (Chrome, Edge, Samsung Internet): open
-  `https://igtoth.github.io/tracedraw/`, then the browser's menu and
+  `https://tracedraw.github.io/tracedraw/`, then the browser's menu and
   "Install app" or "Add to Home screen". Chrome may also show an install
   bar under the address bar.
 - iPad (Safari): open the page, tap Share, then "Add to Home Screen".

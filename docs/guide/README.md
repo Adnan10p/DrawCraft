@@ -33,7 +33,7 @@ same program runs in a web browser with nothing to install.
 > place, but expect bugs and rough edges. The
 > [feature status](../features.md) page lists every capability and how
 > far along it is. If a file does not open right, the project welcomes a
-> sample in an [issue](https://github.com/igtoth/tracedraw/issues/new/choose).
+> sample in an [issue](https://github.com/tracedraw/tracedraw/issues/new/choose).
 
 ## Who this guide is for
 

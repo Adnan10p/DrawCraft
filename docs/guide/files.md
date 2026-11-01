@@ -98,7 +98,7 @@ TraceDraw reads and writes `.cdr` files independently:
   `.cdr` save updates it.
 
 If a `.cdr` file does not open right and you may share it, please
-[send it in an issue](https://github.com/igtoth/tracedraw/issues/new?template=cdr_file.yml):
+[send it in an issue](https://github.com/tracedraw/tracedraw/issues/new?template=cdr_file.yml):
 sample files are what improves the reader most.
 
 ## Export

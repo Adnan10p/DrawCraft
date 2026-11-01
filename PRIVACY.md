@@ -82,7 +82,7 @@ at first start and can turn off at any time:
 
 ## The browser version
 
-The browser version at <https://igtoth.github.io/tracedraw/> is a set of static
+The browser version at <https://tracedraw.github.io/tracedraw/> is a set of static
 files served by GitHub Pages. TraceDraw itself sends nothing (AI Drawing
 aside, as above, from your browser to the service you set up). When a
 drawing's text needs a font of the page's font catalog, or the pointer
@@ -95,6 +95,6 @@ Files you open in it stay in your browser.
 ## Contact
 
 Questions about this policy: open an issue at
-<https://github.com/igtoth/tracedraw/issues>.
+<https://github.com/tracedraw/tracedraw/issues>.
 
 Last updated: 2026-10-29.

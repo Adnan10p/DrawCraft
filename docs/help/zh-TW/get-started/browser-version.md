@@ -2,7 +2,7 @@
 
 > *機器翻譯：本頁可能落後於英文版。*
 
-您可以[在網頁瀏覽器中使用 TraceDraw](https://igtoth.github.io/tracedraw/)，不需安裝任何東西。它與桌面版是同一個程式，只是為瀏覽器建置，因此選單、工具和檔案都相同。
+您可以[在網頁瀏覽器中使用 TraceDraw](https://tracedraw.github.io/tracedraw/)，不需安裝任何東西。它與桌面版是同一個程式，只是為瀏覽器建置，因此選單、工具和檔案都相同。
 
 ![瀏覽器版本開啟時顯示的訊息](../../img/get-started-browser-version.png)
 

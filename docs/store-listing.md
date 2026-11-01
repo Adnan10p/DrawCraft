@@ -14,9 +14,9 @@ brackets are the Store's.
 ## Properties
 
 - Category: Photo & video (or Productivity).
-- Privacy policy URL: <https://github.com/igtoth/tracedraw/blob/main/PRIVACY.md>
-- Website: <https://github.com/igtoth/tracedraw>
-- Support contact: <https://github.com/igtoth/tracedraw/issues>
+- Privacy policy URL: <https://github.com/tracedraw/tracedraw/blob/main/PRIVACY.md>
+- Website: <https://github.com/tracedraw/tracedraw>
+- Support contact: <https://github.com/tracedraw/tracedraw/issues>
 - Product declarations: none of the data, accessibility or
   inking boxes apply; the app works with a mouse and a keyboard.
 - System requirements: Windows 10 version 1809 or later, x64. A
@@ -75,7 +75,7 @@ of location or personal data, no purchases. The usual result is 3+ / E.
 >
 > TraceDraw collects nothing and needs no account. It is free software
 > under the MIT or Apache-2.0 license; the source code, the feature
-> status and the issue tracker are at github.com/igtoth/tracedraw.
+> status and the issue tracker are at github.com/tracedraw/tracedraw.
 >
 > This is an alpha release: some features are still missing, and real
 > work will turn up bugs. Reports and sample files help most.

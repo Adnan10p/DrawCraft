@@ -20,8 +20,8 @@ version = "0.33.0"
 edition = "2021"
 authors = ["Ighor Toth"]
 license = "MIT OR Apache-2.0"
-repository = "https://github.com/igtoth/tracedraw"
-homepage = "https://github.com/igtoth/tracedraw"
+repository = "https://github.com/tracedraw/tracedraw"
+homepage = "https://github.com/tracedraw/tracedraw"
 rust-version = "1.89"
 
 [workspace.dependencies]

@@ -381,9 +381,9 @@ mod tests {
             "Written in Rust",
             "MIT or Apache-2.0",
             // Where to go when loading stalls.
-            "https://github.com/igtoth/tracedraw/releases/latest",
-            "https://github.com/igtoth/tracedraw\"",
-            "https://github.com/igtoth/tracedraw/issues",
+            "https://github.com/tracedraw/tracedraw/releases/latest",
+            "https://github.com/tracedraw/tracedraw\"",
+            "https://github.com/tracedraw/tracedraw/issues",
             // Which screens it is for.
             "desktop browser",
             "Window &gt; Workspace &gt; Touch",

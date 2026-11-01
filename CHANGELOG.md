@@ -6,6 +6,8 @@ full, row-by-row status.
 
 ## Unreleased
 
+- The project lives in the `tracedraw` GitHub organization: every link to the repository, the issue tracker, the releases and the browser version (`tracedraw.github.io/tracedraw`) points there. The old addresses under `igtoth` redirect, except the browser version's page, which does not.
+
 - `tracedraw-core`: `shaping::overlay_with` combines outlines read with the nonzero rule as well as the even-odd one (`FillRule`), so text-like outlines need no clean-up before shaping; `overlay` stays even-odd.
 
 ## 0.33.0 (2026-10-31)

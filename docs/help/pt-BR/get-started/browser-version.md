@@ -2,7 +2,7 @@
 
 > *Tradução automática: esta página pode estar atrasada em relação à versão em inglês.*
 
-Você pode [usar o TraceDraw no navegador](https://igtoth.github.io/tracedraw/)
+Você pode [usar o TraceDraw no navegador](https://tracedraw.github.io/tracedraw/)
 sem instalar nada. É o mesmo programa da versão para computador, compilado para
 o navegador, então os menus, as ferramentas e os arquivos são os mesmos.
 

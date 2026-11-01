@@ -172,7 +172,7 @@ jobs:
           timestamp-rfc3161: http://timestamp.acs.microsoft.com
           timestamp-digest: SHA256
           description: TraceDraw
-          description-url: https://github.com/igtoth/tracedraw
+          description-url: https://github.com/tracedraw/tracedraw
 
       - name: Programs to sign (SignPath)
         id: unsigned-programs
@@ -249,7 +249,7 @@ jobs:
           timestamp-rfc3161: http://timestamp.acs.microsoft.com
           timestamp-digest: SHA256
           description: TraceDraw Setup
-          description-url: https://github.com/igtoth/tracedraw
+          description-url: https://github.com/tracedraw/tracedraw
 
       - name: Installer to sign (SignPath)
         id: unsigned-installer

@@ -11,7 +11,7 @@ of this guide make sense.
 Every version of TraceDraw has a release with files for each system. To
 install it:
 
-1. Open the [latest release](https://github.com/igtoth/tracedraw/releases/latest).
+1. Open the [latest release](https://github.com/tracedraw/tracedraw/releases/latest).
 2. Download the file for your system (`<version>` is the version
    number):
 
@@ -39,7 +39,7 @@ pre-release on the releases page is refreshed with every change.
 
 ### In your browser
 
-You can also [open TraceDraw in the browser](https://igtoth.github.io/tracedraw/)
+You can also [open TraceDraw in the browser](https://tracedraw.github.io/tracedraw/)
 with nothing to install. While it loads, the page shows a progress bar;
 the editor starts when the bar is full.
 

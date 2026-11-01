@@ -1972,7 +1972,7 @@ impl Default for QrCode {
     fn default() -> Self {
         QrCode {
             kind: QrKind::Url,
-            fields: vec!["https://github.com/igtoth/tracedraw".into()],
+            fields: vec!["https://github.com/tracedraw/tracedraw".into()],
             pixel_mm: 2.5,
             dark: Fill::Solid(crate::Color::BLACK),
             light: Fill::Solid(crate::Color::WHITE),

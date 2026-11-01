@@ -14,9 +14,9 @@ use serde::Deserialize;
 use std::sync::{Arc, Mutex};
 
 /// The project's latest release, as GitHub describes it.
-pub const LATEST_URL: &str = "https://api.github.com/repos/igtoth/tracedraw/releases/latest";
+pub const LATEST_URL: &str = "https://api.github.com/repos/tracedraw/tracedraw/releases/latest";
 /// The release list, for when no download fits this system.
-pub const RELEASES_PAGE: &str = "https://github.com/igtoth/tracedraw/releases";
+pub const RELEASES_PAGE: &str = "https://github.com/tracedraw/tracedraw/releases";
 /// TraceDraw's page in the Microsoft Store (the browser version offers it
 /// on Windows).
 pub const MICROSOFT_STORE_PAGE: &str = "https://apps.microsoft.com/detail/9P50L12VHF33";
@@ -612,7 +612,7 @@ mod tests {
     /// version moved to 0.5.0. Each URL ends in the file's name.
     const SAMPLE: &str = r#"{
         "tag_name": "v0.5.0",
-        "html_url": "https://github.com/igtoth/tracedraw/releases/tag/v0.5.0",
+        "html_url": "https://github.com/tracedraw/tracedraw/releases/tag/v0.5.0",
         "prerelease": false,
         "draft": false,
         "assets": [

@@ -13,7 +13,7 @@ find out what changed and lists the highlights of the latest versions.
   title of a menu that holds one. The marks go away when you turn the
   command off, and the command is off again the next time TraceDraw starts.
 - The complete list of changes of every version is in the project's
-  [change log](https://github.com/igtoth/tracedraw/blob/main/CHANGELOG.md).
+  [change log](https://github.com/tracedraw/tracedraw/blob/main/CHANGELOG.md).
 
 ## Highlights of recent versions {#highlights}
 
