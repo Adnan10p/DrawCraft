@@ -6,6 +6,8 @@ full, row-by-row status.
 
 ## Unreleased
 
+- The project is credited to TraceDraw members and contributors everywhere (README, About box, licenses, installers, packages, the browser page and the store listings); commits by the maintainers are made as TraceDraw Maintainers.
+
 - The project lives in the `tracedraw` GitHub organization: every link to the repository, the issue tracker, the releases and the browser version (`tracedraw.github.io/tracedraw`) points there. The old addresses under `igtoth` redirect, except the browser version's page, which does not.
 
 - A trademark notice in the README, `PRIVACY.md`, the About box, the browser page and the store listings says that TraceDraw is an independent project, not affiliated with the owner of the `.cdr` format's trademark, and that `.cdr` support is implemented independently for interoperability. VBA macros reach the application object as `Application` only; the alias named after that program is gone.

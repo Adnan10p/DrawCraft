@@ -373,7 +373,7 @@ mod tests {
             "#5caeff",
             "Trace<tspan fill=\"#7fc3ff\">Draw</tspan>",
             "Vector illustration editor",
-            "Ighor Toth and the TraceDraw contributors",
+            "TraceDraw members and contributors",
             "v@VERSION@",
             // What it is, how ready it is, what it is made of and its terms.
             "open-source vector editor that opens .cdr files",

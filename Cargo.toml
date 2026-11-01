@@ -18,7 +18,7 @@ members = [
 [workspace.package]
 version = "0.33.0"
 edition = "2021"
-authors = ["Ighor Toth"]
+authors = ["TraceDraw members and contributors"]
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/tracedraw/tracedraw"
 homepage = "https://github.com/tracedraw/tracedraw"

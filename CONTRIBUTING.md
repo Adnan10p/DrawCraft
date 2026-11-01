@@ -65,6 +65,11 @@ your sign-off are public and kept with the project.
 Pull requests with unsigned commits, or with material whose origin is
 unclear, are not merged.
 
+The maintainers' own commits are authored and signed off as
+`TraceDraw Maintainers <contact@tracedraw.org>`, the project's identity;
+that address reaches the people who answer for them. Contributions from
+anyone else carry the contributor's own name.
+
 ## Workflow
 
 - Run `cargo fmt --all`, `cargo clippy --workspace --tests` and

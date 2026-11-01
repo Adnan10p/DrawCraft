@@ -469,8 +469,8 @@ is described in [`docs/code-signing.md`](docs/code-signing.md).
 
 | Role | Members |
 |---|---|
-| Committers and reviewers | [Ighor Toth](https://github.com/igtoth) |
-| Approvers | [Ighor Toth](https://github.com/igtoth) |
+| Committers and reviewers | [TraceDraw maintainers](https://github.com/orgs/tracedraw/people) |
+| Approvers | [TraceDraw maintainers](https://github.com/orgs/tracedraw/people) |
 
 Privacy policy: this program will not transfer any information to other
 networked systems unless specifically requested by the user or the person
@@ -508,9 +508,9 @@ Options > Global > General, "Check for updates at start". The full policy is in
 
 TraceDraw is dual-licensed under [MIT](LICENSE-MIT) or
 [Apache-2.0](LICENSE-APACHE), at your option.
-Copyright &copy; 2026 Ighor Toth and the TraceDraw contributors.
+Copyright &copy; 2026 TraceDraw members and contributors.
 
-Written by Ighor Toth with Claude Code, Anthropic's AI coding assistant,
+Written by the TraceDraw maintainers with Claude Code, Anthropic's AI coding assistant,
 as co-author: commits it helped write carry a `Co-Authored-By` line, and
 the About box says so too.
 

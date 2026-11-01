@@ -131,8 +131,8 @@ tracedraw-core = { workspace = true, features = ["test-profiles"] }
 
 [package.metadata.deb]
 name = "tracedraw"
-maintainer = "TraceDraw contributors <noreply@tracedraw.dev>"
-copyright = "2026, Ighor Toth and the TraceDraw contributors"
+maintainer = "TraceDraw contributors <contact@tracedraw.org>"
+copyright = "2026, TraceDraw members and contributors"
 license-file = ["../../LICENSE-MIT", "0"]
 extended-description = "Open-source vector illustration editor with a classic desktop workflow and a .cdr reader."
 section = "graphics"

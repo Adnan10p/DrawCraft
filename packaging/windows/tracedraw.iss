@@ -12,8 +12,8 @@
 AppId={{7E6E3B5C-4C1E-4F7B-9D7A-2B9D5C1A0E11}
 AppName=TraceDraw
 AppVersion={#Version}
-AppPublisher=Ighor Toth
-AppCopyright=Copyright (c) 2026 Ighor Toth and the TraceDraw contributors
+AppPublisher=TraceDraw
+AppCopyright=Copyright (c) 2026 TraceDraw members and contributors
 AppPublisherURL=https://github.com/tracedraw/tracedraw
 DefaultDirName={autopf}\TraceDraw
 DefaultGroupName=TraceDraw

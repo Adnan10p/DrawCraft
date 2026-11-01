@@ -99,8 +99,8 @@ of [`CHANGELOG.md`](../CHANGELOG.md) for the version submitted.
 **Keywords** [up to 7]: vector editor, illustration, page layout,
 drawing, graphic design, print, cdr
 
-**Copyright and trademark info**: Copyright (c) 2026 Ighor Toth and the
-TraceDraw contributors. MIT or Apache-2.0. TraceDraw is an independent
+**Copyright and trademark info**: Copyright (c) 2026 TraceDraw members and
+contributors. MIT or Apache-2.0. TraceDraw is an independent
 project, not affiliated with, endorsed by or sponsored by Corel
 Corporation or Alludo. CorelDRAW is a registered trademark of Corel
 Corporation. .cdr support is implemented independently, for

@@ -3431,7 +3431,7 @@ mod pdfx_tests {
         let opts = PdfOptions {
             bookmarks: true,
             show_bookmarks: true,
-            author: Some("Ighor".into()),
+            author: Some("Ada".into()),
             keywords: Some("poster, test".into()),
             ..Default::default()
         };
@@ -3442,7 +3442,7 @@ mod pdfx_tests {
         // Non-Latin names as UTF-16 with a byte order mark.
         assert!(text.contains("/Title <FEFF65E5672C>"));
         assert!(text.contains("/PageMode /UseOutlines"));
-        assert!(text.contains("/Author (Ighor)") && text.contains("/Keywords (poster, test)"));
+        assert!(text.contains("/Author (Ada)") && text.contains("/Keywords (poster, test)"));
         // An independent reader finds two bookmarks.
         let parsed = lopdf::Document::load_mem(&bytes).expect("parse");
         let outlines = parsed
