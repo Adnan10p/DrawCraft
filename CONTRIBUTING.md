@@ -101,15 +101,15 @@ people who answer for them.
 ## Roles
 
 TraceDraw lives in the [`tracedraw`](https://github.com/tracedraw)
-GitHub organization. Everyone starts as a contributor; reviewers and
+GitHub organization (team pages are visible to its members only). Everyone starts as a contributor; reviewers and
 maintainers are invited from the people who contribute code. How
 reviewers and maintainers work is in [`MAINTAINING.md`](MAINTAINING.md).
 
 | Role | On GitHub | Can | Cannot |
 |---|---|---|---|
 | Contributor | anyone, from a fork | open issues and pull requests, comment, send sample files | label, close or merge |
-| Reviewer | the [`reviewers`](https://github.com/orgs/tracedraw/teams/reviewers) team (Triage) | label, assign, close and reopen issues and pull requests; review and approve pull requests | push, merge, release, change settings |
-| Maintainer | the [`maintainers`](https://github.com/orgs/tracedraw/teams/maintainers) team (Maintain) | everything a reviewer can, and merge approved pull requests, manage labels and milestones, prepare releases | change settings or branch protection, see secrets, sign or publish builds |
+| Reviewer | the `reviewers` team (Triage) | label, assign, close and reopen issues and pull requests; review and approve pull requests | push, merge, release, change settings |
+| Maintainer | the `maintainers` team (Maintain) | everything a reviewer can, and merge approved pull requests, manage labels and milestones, prepare releases | change settings or branch protection, see secrets, sign or publish builds |
 | Owner | the organization's owners | everything, including settings, secrets, signing and the store listings | |
 
 - **Becoming a reviewer:** at least two merged pull requests of your own,

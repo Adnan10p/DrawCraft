@@ -469,7 +469,7 @@ is described in [`docs/code-signing.md`](docs/code-signing.md).
 
 | Role | Members |
 |---|---|
-| Committers and reviewers | the [maintainers](https://github.com/orgs/tracedraw/teams/maintainers) and [reviewers](https://github.com/orgs/tracedraw/teams/reviewers) teams (see [Roles](CONTRIBUTING.md#roles)) |
+| Committers and reviewers | the organization's `maintainers` and `reviewers` teams (see [Roles](CONTRIBUTING.md#roles)) |
 | Approvers | the owners of the [`tracedraw`](https://github.com/tracedraw) organization |
 
 Privacy policy: this program will not transfer any information to other
