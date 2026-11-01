@@ -3501,7 +3501,7 @@ mod pdfx_tests {
         assert_eq!(title, b"Secret plan");
         let page = *d.get_pages().values().next().expect("page");
         let content =
-            String::from_utf8_lossy(&d.get_page_content(page).expect("content")).into_owned();
+            String::from_utf8_lossy(&d.get_page_content(page)).into_owned();
         assert!(content.contains(" rg") && content.contains(" l\n"));
         // The user password unwraps the same file key from /UE, and /Perms
         // decrypts with it to the permissions. (That reader's own check of
