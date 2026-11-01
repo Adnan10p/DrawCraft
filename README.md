@@ -5,7 +5,7 @@
 <h1 align="center">TraceDraw</h1>
 
 <p align="center">
-  <b>Vector illustration, page layout and print; an open-source, clean-room vector editor rebuilt from scratch in pure Rust.</b><br>
+  <b>Vector illustration, page layout and print; an open-source, clean-room vector editor written from scratch in pure Rust.</b><br>
   Pages and layers, curves and nodes, artistic and paragraph text, fills and outlines, live effects, symbols, PDF/X and real <code>.cdr</code> files,<br>
   in one native program for Windows, macOS and Linux, and in the browser.
 </p>
@@ -522,8 +522,12 @@ is listed with its author, source and license in
 [ATTRIBUTION.md](ATTRIBUTION.md). Every drawing in the screenshots was made
 for TraceDraw.
 
-<sub>TraceDraw is an independent open-source project, not affiliated with,
-sponsored by or endorsed by any other software vendor. Trademarks and
+<sub>TraceDraw is an independent open-source project, not affiliated
+with, endorsed by or sponsored by Corel Corporation, Alludo or any other
+software vendor. CorelDRAW is a registered trademark of Corel Corporation.
+<code>.cdr</code> support is implemented independently, from public format
+notes and files the contributors own, for interoperability; no code,
+documentation or content of any other product is used. Other trademarks and
 product names belong to their owners; file format names such as
 <code>.cdr</code>, <code>.ai</code>, <code>.psd</code> and <code>.pdf</code>
 are used only to describe the files TraceDraw reads and writes. The
