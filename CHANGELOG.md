@@ -6,6 +6,8 @@ full, row-by-row status.
 
 ## Unreleased
 
+## 0.34.0 (2026-11-01)
+
 - Opening a PDF or AI file nested far deeper than any real one (thousands of arrays, dictionaries or parentheses inside one another) no longer closes TraceDraw: the PDF reader (`lopdf`, now 0.46) stops at a fixed depth and reports the file as damaged. A file of about 20 KB could take the program down with a stack overflow, which cannot be caught (RUSTSEC-2026-0187, GHSA-6fj4-rcr3-r7rr).
 
 - Roles in the `tracedraw` organization (contributor, reviewer, maintainer, owner) are set out in `CONTRIBUTING.md`, and `MAINTAINING.md` describes how reviewers and maintainers triage issues by priority, read attached files safely, keep feature requests for later, and review and merge pull requests. Maintainers commit under their own names; only the project's own account commits as TraceDraw Maintainers.
