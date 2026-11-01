@@ -43,7 +43,10 @@ Reports without what it takes to repeat the problem are marked
 - TraceDraw stands on its own: do not name other vendors or their
   products in code, comments, docs, commit messages or file names, and do
   not describe a feature as modelled on another program. Give features
-  descriptive names of their own.
+  descriptive names of their own. The one exception is the trademark
+  notice (README, `PRIVACY.md`, About box, web page, store listings),
+  which names the owner of the `.cdr` trademark to say that TraceDraw is
+  independent of it.
 
 ## Sign-off (DCO)
 

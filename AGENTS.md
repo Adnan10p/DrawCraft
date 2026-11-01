@@ -24,7 +24,11 @@ The product name is **TraceDraw** in prose; machine names are `tracedraw`
    software are never used. File formats go by their usual names (`.cdr`,
    `.ai`, `.psd`, a format owner's name in a file dialog filter, a header
    string a format requires) only to describe compatibility; copyright
-   notices that a license requires stay in `ATTRIBUTION.md`. Never decompile any program and never use
+   notices that a license requires stay in `ATTRIBUTION.md`. The one
+   exception is the trademark notice (README, `PRIVACY.md`, the About
+   box, the web page and the store listings), which names the owner of
+   the `.cdr` format's trademark to state that TraceDraw is independent
+   of it; keep its wording the same everywhere. Never decompile any program and never use
    decompiled code or dumps, not even in conversations with AI tools.
    Format readers come from public format notes and from inspecting files
    we own; never port code from libcdr or any other implementation.

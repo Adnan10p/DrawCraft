@@ -92,9 +92,17 @@ of both, may log visits as described in the
 [GitHub Privacy Statement](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement).
 Files you open in it stay in your browser.
 
+## Independence and trademarks
+
+TraceDraw is an independent open-source project, not affiliated with,
+endorsed by or sponsored by Corel Corporation, Alludo or any other
+software vendor. CorelDRAW is a registered trademark of Corel Corporation.
+`.cdr` support is implemented independently, for interoperability. Other
+trademarks and product names belong to their owners.
+
 ## Contact
 
 Questions about this policy: open an issue at
 <https://github.com/tracedraw/tracedraw/issues>.
 
-Last updated: 2026-10-29.
+Last updated: 2026-11-01.

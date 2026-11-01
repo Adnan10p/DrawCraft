@@ -8,6 +8,8 @@ full, row-by-row status.
 
 - The project lives in the `tracedraw` GitHub organization: every link to the repository, the issue tracker, the releases and the browser version (`tracedraw.github.io/tracedraw`) points there. The old addresses under `igtoth` redirect, except the browser version's page, which does not.
 
+- A trademark notice in the README, `PRIVACY.md`, the About box, the browser page and the store listings says that TraceDraw is an independent project, not affiliated with the owner of the `.cdr` format's trademark, and that `.cdr` support is implemented independently for interoperability. VBA macros reach the application object as `Application` only; the alias named after that program is gone.
+
 - `tracedraw-core`: `shaping::overlay_with` combines outlines read with the nonzero rule as well as the even-odd one (`FillRule`), so text-like outlines need no clean-up before shaping; `overlay` stays even-odd.
 
 ## 0.33.0 (2026-10-31)

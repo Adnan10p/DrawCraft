@@ -100,7 +100,11 @@ of [`CHANGELOG.md`](../CHANGELOG.md) for the version submitted.
 drawing, graphic design, print, cdr
 
 **Copyright and trademark info**: Copyright (c) 2026 Ighor Toth and the
-TraceDraw contributors. MIT or Apache-2.0.
+TraceDraw contributors. MIT or Apache-2.0. TraceDraw is an independent
+project, not affiliated with, endorsed by or sponsored by Corel
+Corporation or Alludo. CorelDRAW is a registered trademark of Corel
+Corporation. .cdr support is implemented independently, for
+interoperability.
 
 **Screenshots** [PNG, 1366 x 768 or larger, up to 10]: the README pictures
 in `docs/images/` saved as PNG (1600 x 950): the poster (`hero`), curves,
