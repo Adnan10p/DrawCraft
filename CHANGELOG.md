@@ -6,6 +6,8 @@ full, row-by-row status.
 
 ## Unreleased
 
+- Roles in the `tracedraw` organization (contributor, reviewer, maintainer, owner) are set out in `CONTRIBUTING.md`, and `MAINTAINING.md` describes how reviewers and maintainers triage issues by priority, read attached files safely, keep feature requests for later, and review and merge pull requests. Maintainers commit under their own names; only the project's own account commits as TraceDraw Maintainers.
+
 - The project is credited to TraceDraw members and contributors everywhere (README, About box, licenses, installers, packages, the browser page and the store listings); commits by the maintainers are made as TraceDraw Maintainers.
 
 - The project lives in the `tracedraw` GitHub organization: every link to the repository, the issue tracker, the releases and the browser version (`tracedraw.github.io/tracedraw`) points there. The old addresses under `igtoth` redirect, except the browser version's page, which does not.

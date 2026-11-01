@@ -106,9 +106,11 @@ behind it, and never add a feature without updating the row.
 
 - `cargo test --workspace` before every commit.
 - Commits carry a `Signed-off-by:` line (DCO, see `CONTRIBUTING.md`).
-  Commits made for the maintainers are authored, committed and signed off
-  as `TraceDraw Maintainers <contact@tracedraw.org>`; no personal name
-  or address goes into the repository, its packages or its listings.
+  Commits keep their author's own name and address, maintainers
+  included; only the project's own account (the organization's owner)
+  commits and signs off as `TraceDraw Maintainers <contact@tracedraw.org>`.
+  No personal name or address goes into the repository's files, packages
+  or listings (contributors' GitHub handles in `CONTRIBUTORS.md` aside).
 - `cargo build -p tracedraw` and `cargo clippy --workspace` must stay
   warning-free (CI runs clippy with `-D warnings` on the library crates,
   on the pinned toolchain 1.97.0; use the same version locally so the

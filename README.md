@@ -469,8 +469,8 @@ is described in [`docs/code-signing.md`](docs/code-signing.md).
 
 | Role | Members |
 |---|---|
-| Committers and reviewers | [TraceDraw maintainers](https://github.com/orgs/tracedraw/people) |
-| Approvers | [TraceDraw maintainers](https://github.com/orgs/tracedraw/people) |
+| Committers and reviewers | the [maintainers](https://github.com/orgs/tracedraw/teams/maintainers) and [reviewers](https://github.com/orgs/tracedraw/teams/reviewers) teams (see [Roles](CONTRIBUTING.md#roles)) |
+| Approvers | the owners of the [`tracedraw`](https://github.com/tracedraw) organization |
 
 Privacy policy: this program will not transfer any information to other
 networked systems unless specifically requested by the user or the person
@@ -501,6 +501,7 @@ Options > Global > General, "Check for updates at start". The full policy is in
 | [`CLEANROOM.md`](CLEANROOM.md) | where the knowledge of every file format comes from |
 | [`ATTRIBUTION.md`](ATTRIBUTION.md) | bundled assets and their licenses |
 | [`CONTRIBUTORS.md`](CONTRIBUTORS.md) | the people who contributed code, tests and reports |
+| [`MAINTAINING.md`](MAINTAINING.md) | how reviewers and maintainers triage issues, read attachments, review and merge |
 
 ---
 

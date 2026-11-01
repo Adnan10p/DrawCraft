@@ -11,6 +11,7 @@ contributor's own GitHub identity.
 
 | Contributor | Contributions |
 |---|---|
+| [@SofiaAFigueredo](https://github.com/SofiaAFigueredo) | Save As starts with Embed fonts off (#901, for #886); a contour on text keeps the CPU low while dragging and pointing (#906, for #897); Area Fill closes hairline gaps between lines that nearly meet (#899); Bevel: Emboss draws its band around the outline, Level and Emboss colours, and its panel (#1135); a group's uniform transparency is drawn, exported and kept on Ungroup and in `.cdr` (#1386); a locked guideline shows no rotation handles (#1385); the multipage view repaints the pages beside the current one (#1384) |
 | [@belchiordameao-cmd](https://github.com/belchiordameao-cmd) | Publish to PDF leaves out pictures wholly outside the page and its bleed (#648, for #642); `.cdr` pages up to 100 m on a side keep their size (#651); `tracedraw-cli convert` reports what the `.cdr` reader skipped or guessed (#653) |
 | [@LaMka21](https://github.com/LaMka21) | Moving goes on after a right click during a drag (#174); files dropped on the window are opened or imported (#177); Paste takes what was copied last, files and pictures included (#183) |
 
