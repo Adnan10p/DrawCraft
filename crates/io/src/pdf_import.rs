@@ -245,7 +245,7 @@ fn decrypt_as_read(id: lopdf::ObjectId, object: &mut Object) -> Option<(lopdf::O
             if stream.content.is_empty() && stream.start_position.is_some() {
                 pass.late.push(id);
             } else if stream.dict.has_type(b"ObjStm") {
-                if let Ok(objects) = lopdf::ObjectStream::new(&mut stream.clone()) {
+                if let Ok(objects) = lopdf::ObjectStream::new(stream) {
                     pass.members = objects.objects.keys().copied().collect();
                 }
             }
