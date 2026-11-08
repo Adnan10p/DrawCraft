@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="assets/icon/tracedraw-256.png" alt="TraceDraw" width="120">
+  <img src="assets/icon/drawcraft-256.png" alt="DrawCraft" width="120">
 </p>
 
-<h1 align="center">TraceDraw</h1>
+<h1 align="center">DrawCraft</h1>
 
 <p align="center">
   <b>Vector illustration, page layout and print; an open-source, clean-room vector editor written from scratch in pure Rust.</b><br>
@@ -19,29 +19,19 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/tracedraw/tracedraw/releases"><b>Download</b></a> &middot;
-  <a href="https://apps.microsoft.com/detail/9P50L12VHF33">Microsoft Store</a>* &middot;
-  <a href="https://tracedraw.github.io/tracedraw/">Open it in the browser</a> &middot;
+  <a href="https://github.com/Adnan10p/DrawCraft/releases"><b>Download</b></a> &middot;
   <a href="docs/features.md">Feature status</a> &middot;
   <a href="CONTRIBUTING.md">Contribute</a>
 </p>
 
 <p align="center">
-  <a href="https://apps.microsoft.com/detail/9P50L12VHF33"><img src="https://get.microsoft.com/images/en-us%20dark.svg" alt="Get it from Microsoft" width="200"></a>
-</p>
-
-<p align="center">
-  <sub>* The <a href="https://apps.microsoft.com/detail/9P50L12VHF33">Microsoft Store</a> version is signed and updates itself, but each version must pass the Store's certification first (hours to days), so it is often one or more releases behind the <a href="https://github.com/tracedraw/tracedraw/releases/latest">latest download</a>.</sub>
-</p>
-
-<p align="center">
-  <sub>Alpha: expect bugs. A <code>.cdr</code> file that does not open right? <a href="https://github.com/tracedraw/tracedraw/issues/new?template=cdr_file.yml">Send it in an issue</a>: sample files are what improves the reader most.</sub>
+  <sub>Alpha: expect bugs. A <code>.cdr</code> file that does not open right? <a href="https://github.com/Adnan10p/DrawCraft/issues/new">Send it in an issue</a>: sample files are what improves the reader most.</sub>
 </p>
 
 <br>
 
 <p align="center">
-  <img src="docs/images/tracedraw-hero.jpg" alt="TraceDraw with an illustrated poster of a lake at dusk: the title is selected, the property bar shows its font, size and alignment, and the Objects panel lists the five layers and their named objects" width="100%">
+  <img src="docs/images/DrawCraft-hero.jpg" alt="DrawCraft with an illustrated poster of a lake at dusk: the title is selected, the property bar shows its font, size and alignment, and the Objects panel lists the five layers and their named objects" width="100%">
   <br>
   <sub>A poster drawn on five layers, its title selected, every object named in the Objects panel.</sub>
 </p>
@@ -84,7 +74,7 @@
 
 ## Features
 
-Every screenshot is TraceDraw itself, captured headless by
+Every screenshot is DrawCraft itself, captured headless by
 `scripts/visual/readme_shots.sh` from drawings made from scratch by
 `apps/tracedraw-cli/examples/showcase.rs`. Some are in the Dark and
 Medium Dark themes (Options &rsaquo; Customization &rsaquo; Appearance,
@@ -93,7 +83,7 @@ or the moon button at the right of the status bar).
 <table>
   <tr>
     <td width="50%" valign="top">
-      <img src="docs/images/tracedraw-curves.jpg" alt="A leaf drawn with smooth curves; the Shape tool has every node selected, showing the handles, and the property bar shows the node buttons" width="100%">
+      <img src="docs/images/DrawCraft-curves.jpg" alt="A leaf drawn with smooth curves; the Shape tool has every node selected, showing the handles, and the property bar shows the node buttons" width="100%">
       <br>
       <sub>The Shape tool on a leaf, every node selected with its handles.</sub>
       <h3>Curves you can shape</h3>
@@ -102,7 +92,7 @@ or the moon button at the right of the status bar).
       Shaping tools (weld, trim, intersect, simplify, front and back minus), Smear, Twirl, Attract, Repel and Roughen, Knife, Eraser, Crop and Segment Delete reshape the rest.
     </td>
     <td width="50%" valign="top">
-      <img src="docs/images/tracedraw-effects.jpg" alt="A page of six live effects (Blend, Contour, Extrude, Drop Shadow, Envelope and Distort) with the blend selected and the Blend panel open on the right" width="100%">
+      <img src="docs/images/DrawCraft-effects.jpg" alt="A page of six live effects (Blend, Contour, Extrude, Drop Shadow, Envelope and Distort) with the blend selected and the Blend panel open on the right" width="100%">
       <br>
       <sub>Six live effects on one page; the blend's steps and accelerations in its panel.</sub>
       <h3>Effects that stay live</h3>
@@ -111,7 +101,7 @@ or the moon button at the right of the status bar).
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <img src="docs/images/tracedraw-type.jpg" alt="A page of type at 100 percent: a headline, two columns of justified paragraph text with drop caps and hyphenation, and the Text panel with character and paragraph settings" width="100%">
+      <img src="docs/images/DrawCraft-type.jpg" alt="A page of type at 100 percent: a headline, two columns of justified paragraph text with drop caps and hyphenation, and the Text panel with character and paragraph settings" width="100%">
       <br>
       <sub>Two justified columns with drop caps and hyphenation, and the Text panel.</sub>
       <h3>Type that sets properly</h3>
@@ -120,7 +110,7 @@ or the moon button at the right of the status bar).
       Spell check, find and replace, a glyph browser and a font manager that substitutes missing fonts keep long documents in order.
     </td>
     <td width="50%" valign="top">
-      <img src="docs/images/tracedraw-fills.jpg" alt="Eight tiles filled with uniform, linear, radial, conical, square, pattern, texture and mesh fills; the Interactive Fill tool shows the gradient's handles on the linear tile" width="100%">
+      <img src="docs/images/DrawCraft-fills.jpg" alt="Eight tiles filled with uniform, linear, radial, conical, square, pattern, texture and mesh fills; the Interactive Fill tool shows the gradient's handles on the linear tile" width="100%">
       <br>
       <sub>Eight fill types; the Interactive Fill tool editing a gradient on the object.</sub>
       <h3>Every kind of fill</h3>
@@ -131,7 +121,7 @@ or the moon button at the right of the status bar).
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <img src="docs/images/tracedraw-bitmaps.jpg" alt="The poster placed as a bitmap with the Swirl dialog open, showing the bitmap before and after the effect" width="100%">
+      <img src="docs/images/DrawCraft-bitmaps.jpg" alt="The poster placed as a bitmap with the Swirl dialog open, showing the bitmap before and after the effect" width="100%">
       <br>
       <sub>Effects &rsaquo; Distort &rsaquo; Swirl, previewed before and after.</sub>
       <h3>Bitmaps, too</h3>
@@ -140,7 +130,7 @@ or the moon button at the right of the status bar).
       Colour modes, a colour mask, background removal on this computer (no AI needed), straighten, crop and resample complete the set.
     </td>
     <td width="50%" valign="top">
-      <img src="docs/images/tracedraw-trace.jpg" alt="The Trace Bitmap dialog with the Flat Colors preset: the bitmap before and its traced curves after, with the detail, smoothing and colour settings" width="100%">
+      <img src="docs/images/DrawCraft-trace.jpg" alt="The Trace Bitmap dialog with the Flat Colors preset: the bitmap before and its traced curves after, with the detail, smoothing and colour settings" width="100%">
       <br>
       <sub>Trace Bitmap with the Flat Colors preset: the bitmap and the curves it becomes.</sub>
       <h3>From pixels to curves</h3>
@@ -149,7 +139,7 @@ or the moon button at the right of the status bar).
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <img src="docs/images/tracedraw-export.jpg" alt="The Export dialog set to PNG at 300 dpi: a preview of the page, a transparent background option, the size in pixels and an estimated file size" width="100%">
+      <img src="docs/images/DrawCraft-export.jpg" alt="The Export dialog set to PNG at 300 dpi: a preview of the page, a transparent background option, the size in pixels and an estimated file size" width="100%">
       <br>
       <sub>Export as PNG with a preview, the size in pixels and an estimated file size.</sub>
       <h3>Out in any format</h3>
@@ -158,7 +148,7 @@ or the moon button at the right of the status bar).
       Print goes through a PDF; Data Merge fills a design from a CSV file.
     </td>
     <td width="50%" valign="top">
-      <img src="docs/images/tracedraw-languages.jpg" alt="The page of type in TraceDraw with the interface in Japanese: menus, property bar, Text panel and status bar" width="100%">
+      <img src="docs/images/DrawCraft-languages.jpg" alt="The page of type in DrawCraft with the interface in Japanese: menus, property bar, Text panel and status bar" width="100%">
       <br>
       <sub>The same page with the interface in Japanese.</sub>
       <h3>In your language</h3>
@@ -167,30 +157,30 @@ or the moon button at the right of the status bar).
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <img src="docs/images/tracedraw-templates.jpg" alt="The New from Template dialog: a search field, source and category lists, a grid of template thumbnails with the invoice picked, and a details pane with its category and page size" width="100%">
+      <img src="docs/images/DrawCraft-templates.jpg" alt="The New from Template dialog: a search field, source and category lists, a grid of template thumbnails with the invoice picked, and a details pane with its category and page size" width="100%">
       <br>
       <sub>File &rsaquo; New From Template with the invoice picked.</sub>
       <h3>Start from a template</h3>
       Blank pages in the usual sizes and designed templates (business cards, flyers, a poster, a letterhead, a certificate, an invoice, a banner, a social post, a label), every part an ordinary editable object. Search them, filter by category, and keep your own: File &rsaquo; Save as Template puts a drawing in the list.
     </td>
     <td width="50%" valign="top">
-      <img src="docs/images/tracedraw-ai.jpg" alt="The AI Generate docker in the dark theme with a prompt, the Watercolor style and the Warm palette picked, next to the poster" width="100%">
+      <img src="docs/images/DrawCraft-ai.jpg" alt="The AI Generate docker in the dark theme with a prompt, the Watercolor style and the Warm palette picked, next to the poster" width="100%">
       <br>
       <sub>The AI Generate docker, in the dark theme.</sub>
       <h3>AI with your own keys</h3>
-      Create pictures from a prompt with aspect ratio, style and palette presets, remix a selected picture, create vectors (a generated illustration traced into curves), remove a picture's background, and draw shapes from a request in words. TraceDraw has no AI of its own and no account: Tools &rsaquo; Options &rsaquo; AI connects the services you choose (Google Gemini, OpenAI or compatible APIs, local servers included), and nothing is sent until you ask.
+      Create pictures from a prompt with aspect ratio, style and palette presets, remix a selected picture, create vectors (a generated illustration traced into curves), remove a picture's background, and draw shapes from a request in words. DrawCraft has no AI of its own and no account: Tools &rsaquo; Options &rsaquo; AI connects the services you choose (Google Gemini, OpenAI or compatible APIs, local servers included), and nothing is sent until you ask.
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <img src="docs/images/tracedraw-painterly.jpg" alt="A landscape painted with painterly brushes (watercolour sky, ink wash and dry brush hills, bristle and fur grass, speckled flowers) with the brush picker open on the property bar" width="100%">
+      <img src="docs/images/DrawCraft-painterly.jpg" alt="A landscape painted with painterly brushes (watercolour sky, ink wash and dry brush hills, bristle and fur grass, speckled flowers) with the brush picker open on the property bar" width="100%">
       <br>
       <sub>The Painterly Brush tool and its brush picker.</sub>
       <h3>Paint with brushes</h3>
       Twelve painterly brushes in three groups (chalk, charcoal, pastel; ink wash, watercolour, dry brush; bristle, fur, spray, speckle, cloud, silk ribbon) paint freehand strokes or the outline of any object. A brushstroke stays a curve: reshape it with the Shape tool, recolour it from the palette, change its brush, size or transparency, and export it to SVG and PDF.
     </td>
     <td width="50%" valign="top">
-      <img src="docs/images/tracedraw-perspective.jpg" alt="Draw in Perspective in the medium dark theme: a one-point grid over a room with checked floor tiles, windows and doors on the walls and lights on the ceiling" width="100%">
+      <img src="docs/images/DrawCraft-perspective.jpg" alt="Draw in Perspective in the medium dark theme: a one-point grid over a room with checked floor tiles, windows and doors on the walls and lights on the ceiling" width="100%">
       <br>
       <sub>Draw in Perspective with a one-point grid.</sub>
       <h3>Draw in perspective</h3>
@@ -240,7 +230,7 @@ or the moon button at the right of the status bar).
 
 ## .cdr files, read and written independently
 
-TraceDraw's `.cdr` support lives in its own crates (`crates/cdr-format`
+DrawCraft's `.cdr` support lives in its own crates (`crates/cdr-format`
 for the file structure, `crates/cdr` for reading and writing drawings), written
 from public format notes and from files we own, never from decompiled
 programs or other implementations. `CLEANROOM.md` records where each piece
@@ -260,12 +250,12 @@ is confirmed and what is still assumed.
   document palette; what the reader cannot map yet is counted and
   reported, never silently dropped.
 - **Writing back, in the version you need:** drawings save as `.cdr` in
-  any version from 7 to 27, as well as in TraceDraw's own JSON format. A
+  any version from 7 to 27, as well as in DrawCraft's own JSON format. A
   drawing opened from a `.cdr` saves in its own version unless you pick
   another. Save As offers every version from 7 to 27. From version 16 the file can carry the drawing's CMYK
   colour profile and the fonts its text uses (when their licence allows
   embedding).
-- **Never crashes on a file:** `tracedraw-cli stress` runs mutation tests
+- **Never crashes on a file:** `DrawCraft-cli stress` runs mutation tests
   against the reader, opening any file always yields a document, and
   what a file may decompress to is capped.
 
@@ -276,28 +266,28 @@ and redo. The window, the command line, the JavaScript object model and the
 MCP server all go through it, so anything a click can do, a script can do.
 
 ```sh
-# Convert between any format TraceDraw opens and any it writes
-tracedraw-cli convert poster.cdr poster.pdf
-TRACEDRAW_DPI=300 tracedraw-cli convert poster.tdraw poster.png
-TRACEDRAW_PAGE=2 tracedraw-cli convert brochure.cdr page2.png
-TRACEDRAW_CDR_VERSION=15 tracedraw-cli convert logo.svg logo.cdr   # .cdr version 15 (7 to 27)
+# Convert between any format DrawCraft opens and any it writes
+DrawCraft-cli convert poster.cdr poster.pdf
+DrawCraft_DPI=300 DrawCraft-cli convert poster.tdraw poster.png
+DrawCraft_PAGE=2 DrawCraft-cli convert brochure.cdr page2.png
+DrawCraft_CDR_VERSION=15 DrawCraft-cli convert logo.svg logo.cdr   # .cdr version 15 (7 to 27)
 
 # A PDF with a bookmark per page that cannot be printed or copied
 # without its permissions password
-TRACEDRAW_PDF_BOOKMARKS=1 TRACEDRAW_PDF_OWNER_PASSWORD=boss \
-  TRACEDRAW_PDF_DENY=print,copy tracedraw-cli convert brochure.cdr brochure.pdf
+DrawCraft_PDF_BOOKMARKS=1 DrawCraft_PDF_OWNER_PASSWORD=boss \
+  DrawCraft_PDF_DENY=print,copy DrawCraft-cli convert brochure.cdr brochure.pdf
 
 # Look inside a .cdr: the chunk tree, and what the reader made of it
-tracedraw-cli inspect drawing.cdr
-tracedraw-cli info drawing.cdr
-TRACEDRAW_OBJECTS=1 tracedraw-cli info drawing.cdr   # every object
-tracedraw-cli check saved.cdr   # what a reader would stumble on in a file TraceDraw wrote
+DrawCraft-cli inspect drawing.cdr
+DrawCraft-cli info drawing.cdr
+DrawCraft_OBJECTS=1 DrawCraft-cli info drawing.cdr   # every object
+DrawCraft-cli check saved.cdr   # what a reader would stumble on in a file DrawCraft wrote
 
 # Serve the editor to an AI agent over the Model Context Protocol
-tracedraw --mcp
+DrawCraft --mcp
 # ... or let the agent edit the drawing open in the window (Options >
 # Global > General > Let AI agents on this computer edit the open drawing)
-tracedraw --mcp-window
+DrawCraft --mcp-window
 ```
 
 The Scripts panel runs JavaScript against an object model of documents,
@@ -323,7 +313,7 @@ browser. See [`docs/behavior/vba.md`](docs/behavior/vba.md).
 what to draw or change, and an AI service you set up with your own key
 (the Messages API, any chat completions service, or a model server on
 your own computer) writes the script, which runs as one undo step without
-access to your files. TraceDraw has no AI service or account of its own;
+access to your files. DrawCraft has no AI service or account of its own;
 see [`docs/behavior/ai-drawing.md`](docs/behavior/ai-drawing.md).
 
 ## Under the hood
@@ -351,10 +341,10 @@ see [`docs/behavior/ai-drawing.md`](docs/behavior/ai-drawing.md).
 ## Get started
 
 ```sh
-git clone https://github.com/tracedraw/tracedraw
-cd tracedraw
-cargo run --release -p tracedraw                  # the editor
-cargo run --release -p tracedraw -- drawing.cdr   # open a file
+git clone https://github.com/DrawCraft/DrawCraft
+cd DrawCraft
+cargo run --release -p DrawCraft                  # the editor
+cargo run --release -p DrawCraft -- drawing.cdr   # open a file
 cargo test --workspace                            # the test suite
 ```
 
@@ -369,26 +359,26 @@ editor needs X11 or Wayland, libxkbcommon and Mesa.
   distributions can use the browser version.
 - **Older computers too:** a graphics card with OpenGL 2.1 is enough. An
   office PC from 2010 with Intel HD Graphics (Ironlake) under Windows 10
-  runs TraceDraw with its own card since 0.19.8 (#616). Without a usable
-  card, TraceDraw draws the window on the CPU.
+  runs DrawCraft with its own card since 0.19.8 (#616). Without a usable
+  card, DrawCraft draws the window on the CPU.
 - Minimum and recommended hardware and software, measured and
   estimated: [`docs/system-requirements.md`](docs/system-requirements.md).
 - If the window still does not come up, start it with
-  `tracedraw --renderer=gl` and send `tracedraw.log` (in the settings folder) in
-  [an issue](https://github.com/tracedraw/tracedraw/issues/new?template=bug_report.yml).
+  `DrawCraft --renderer=gl` and send `DrawCraft.log` (in the settings folder) in
+  [an issue](https://github.com/DrawCraft/DrawCraft/issues/new?template=bug_report.yml).
 
 New contributors and AI agents: start with [`AGENTS.md`](AGENTS.md), then
 [`CONTRIBUTING.md`](CONTRIBUTING.md) and the pages in [`docs/`](docs/).
 
 > [!IMPORTANT]
 > **Status: alpha.** Most of what a vector editor is expected to do is in
-> place and covered by tests, but TraceDraw is young and has barely met
+> place and covered by tests, but DrawCraft is young and has barely met
 > real users: expect bugs and rough edges,
 > some formats and effects that are close in look rather than identical,
 > and gaps listed in [`docs/blueprint-gaps.md`](docs/blueprint-gaps.md).
 > [`docs/features.md`](docs/features.md) is the honest, row-by-row picture.
 > Issues with a sample file and a screenshot are the most helpful; there
-> are [templates](https://github.com/tracedraw/tracedraw/issues/new/choose)
+> are [templates](https://github.com/DrawCraft/DrawCraft/issues/new/choose)
 > for bugs, `.cdr` files and feature requests.
 >
 > Issues are looked at every day, in the maintainer's spare time, so
@@ -400,20 +390,20 @@ New contributors and AI agents: start with [`AGENTS.md`](AGENTS.md), then
 Anyone who wants to help is welcome, with or without writing code:
 
 - **Try it on your own files.** A `.cdr` that does not open right, sent
-  in [an issue](https://github.com/tracedraw/tracedraw/issues/new?template=cdr_file.yml),
+  in [an issue](https://github.com/DrawCraft/DrawCraft/issues/new?template=cdr_file.yml),
   improves the reader more than anything else (only files you may share).
   Files of versions 4 and 6, and old files that use perspective,
   pattern or PostScript fills, with a picture of how they look, are the
   most wanted: those are the parts still read from few samples.
 - **Open our test files in the program you use for `.cdr` files.** The
-  [`interop` branch](https://github.com/tracedraw/tracedraw/tree/interop/bundles)
-  holds small `.cdr` files saved by TraceDraw in versions 7 to 15; telling
-  us which ones open (and which do not) is what lets TraceDraw save
+  [`interop` branch](https://github.com/DrawCraft/DrawCraft/tree/interop/bundles)
+  holds small `.cdr` files saved by DrawCraft in versions 7 to 15; telling
+  us which ones open (and which do not) is what lets DrawCraft save
   versions 7 to 13 again. Releases from 2021 on open version 15 and newer only,
   so versions 7 to 14 need a release from 2020 or older.
 - **Report bugs** with the steps and a screenshot
-  ([bug report](https://github.com/tracedraw/tracedraw/issues/new?template=bug_report.yml)).
-- **Review a translation** in your language (`apps/tracedraw/lang/`):
+  ([bug report](https://github.com/DrawCraft/DrawCraft/issues/new?template=bug_report.yml)).
+- **Review a translation** in your language (`apps/DrawCraft/lang/`):
   native speakers catch what no test does.
 - **Pick a row** of [`docs/features.md`](docs/features.md) that is not
   "works" yet, or a gap in [`docs/blueprint-gaps.md`](docs/blueprint-gaps.md),
@@ -431,52 +421,34 @@ sign-off line and how pull requests are checked.
 ## Downloads
 
 Each version gets a release with installers for every platform: take the
-[latest release](https://github.com/tracedraw/tracedraw/releases/latest)
+[latest release](https://github.com/DrawCraft/DrawCraft/releases/latest)
 (what changed is in [`CHANGELOG.md`](CHANGELOG.md)). Every push to `main`
 also refreshes the **Nightly build** pre-release. `<version>` in the file
 names is the version number.
 
-On Windows, TraceDraw is also in the
-[Microsoft Store](https://apps.microsoft.com/detail/9P50L12VHF33): signed by the Store, no SmartScreen
-warning, and updated by Windows on its own. Each version has to pass the
-Store's certification first, which takes from a few hours to a few days,
-so the Store version is usually one or more releases behind the
-[latest release](https://github.com/tracedraw/tracedraw/releases/latest) here.
 For the newest fixes, take the installer below.
 
 | Platform | Files |
 |---|---|
-| Windows (x64) | [Microsoft Store](https://apps.microsoft.com/detail/9P50L12VHF33) (signed, may lag behind the latest release), `tracedraw-<version>-windows-x86_64-setup.exe` (installer), `tracedraw-<version>-windows-x86_64-portable.zip` (keeps its settings in the `tracedraw-settings` folder beside the program; not signed yet: if SmartScreen warns, More info > Run anyway) |
-| macOS (Apple silicon, Intel) | `tracedraw-<version>-macos-arm64.dmg`, `tracedraw-<version>-macos-x86_64.dmg` (unsigned for now: right-click, Open) |
-| Linux (x86_64, arm64) | `.deb` (`_amd64` or `_arm64`), `tracedraw-<version>-linux-amd64.AppImage` or `-linux-arm64.AppImage`, `tracedraw-<version>-linux-x86_64.tar.gz` or `-linux-arm64.tar.gz` |
-| Web | no download: [open it in the browser](https://tracedraw.github.io/tracedraw/), nothing to install |
-| Android (64-bit ARM; x86_64 Chromebooks) | `tracedraw-<version>-android-arm64-v8a-debug.apk` (`-x86_64-` for Chromebooks) in the releases and the nightly, signed with a debug key (remove the installed one before installing a build of another run); `scripts/android/build.sh` builds debug-signed APKs and an App Bundle for Google Play, and CI keeps them with each run as the `android-apk` and `android-aab` artifacts after starting the app on Android emulators (see [`docs/behavior/android.md`](docs/behavior/android.md) and [`docs/android-play.md`](docs/android-play.md)) |
-| Web | no download: [open it in the browser](https://tracedraw.github.io/tracedraw/), nothing to install; on an Android tablet, an iPad or a desktop the browser can also install the page as an app that opens full screen and starts offline (see [`docs/behavior/web.md`](docs/behavior/web.md), Installing on a tablet) |
+| Windows (x64) | `drawcraft-<version>-windows-x86_64-setup.exe` (installer), `drawcraft-<version>-windows-x86_64-portable.zip` (keeps its settings in the `drawcraft-settings` folder beside the program) |
+| macOS (Apple silicon, Intel) | `drawcraft-<version>-macos-arm64.dmg`, `drawcraft-<version>-macos-x86_64.dmg` |
+| Linux (x86_64, arm64) | `.deb` (`_amd64` or `_arm64`), `drawcraft-<version>-linux-amd64.AppImage` or `-linux-arm64.AppImage`, `drawcraft-<version>-linux-x86_64.tar.gz` or `-linux-arm64.tar.gz` |
+| Android (64-bit ARM; x86_64 Chromebooks) | `drawcraft-<version>-android-arm64-v8a-debug.apk` |
 
-Each download includes `tracedraw-cli` next to the editor. Packaging sources
-are in [`packaging/`](packaging/); the browser build is described in
-[`docs/behavior/web.md`](docs/behavior/web.md).
+Each download includes `drawcraft` and command-line tools next to the editor. Packaging sources
+are in [`packaging/`](packaging/).
 
 ## Code signing policy
 
-Windows releases are built from this repository by GitHub Actions
-([`build.yml`](.github/workflows/build.yml)) and nowhere else. The
+Windows releases are built from this repository. The
 downloads are not code-signed yet: if SmartScreen warns, More info > Run
-anyway. The [Microsoft Store](https://apps.microsoft.com/detail/9P50L12VHF33) version is signed by the
-Store. When a certificate is set up, a signing request is made only for a
-version tag, and only after an approver accepts it; how the build signs
-is described in [`docs/code-signing.md`](docs/code-signing.md).
-
-| Role | Members |
-|---|---|
-| Committers and reviewers | the organization's `maintainers` and `reviewers` teams (see [Roles](CONTRIBUTING.md#roles)) |
-| Approvers | the owners of the [`tracedraw`](https://github.com/tracedraw) organization |
+anyway.
 
 Privacy policy: this program will not transfer any information to other
 networked systems unless specifically requested by the user or the person
-installing or operating it. TraceDraw opens web pages (help, the project's
+installing or operating it. DrawCraft opens web pages (help, the project's
 pages) in your browser only when you choose to. The one automatic
-connection is the update check: the first time TraceDraw starts it asks
+connection is the update check: the first time DrawCraft starts it asks
 whether to check for updates (Always check / Never check) and connects to
 nothing before you answer; with Always check it asks GitHub
 (`api.github.com`) once a day whether a newer release is out, sending no
@@ -488,7 +460,6 @@ Options > Global > General, "Check for updates at start". The full policy is in
 
 | Document | What it covers |
 |---|---|
-| [User Help](https://tracedraw.github.io/tracedraw/help/en/index.html) | the manual, with screenshots; every "?" button and F1 in the app open its page in the interface language |
 | [`docs/features.md`](docs/features.md) | every capability and its status |
 | [`docs/behavior/`](docs/behavior/) | defaults, shortcuts and formulas, tool by tool |
 | [`docs/architecture.md`](docs/architecture.md) | crates, data flow, units, rendering, text |
@@ -497,7 +468,6 @@ Options > Global > General, "Check for updates at start". The full policy is in
 | [`docs/cdr-format.md`](docs/cdr-format.md) | what the `.cdr` reader assumes and what is confirmed |
 | [`docs/i18n.md`](docs/i18n.md) | interface languages |
 | [`docs/roadmap.md`](docs/roadmap.md) | milestones |
-| [`docs/code-signing.md`](docs/code-signing.md) | signing the Windows downloads and the Microsoft Store package |
 | [`CLEANROOM.md`](CLEANROOM.md) | where the knowledge of every file format comes from |
 | [`ATTRIBUTION.md`](ATTRIBUTION.md) | bundled assets and their licenses |
 | [`CONTRIBUTORS.md`](CONTRIBUTORS.md) | the people who contributed code, tests and reports |
@@ -507,11 +477,11 @@ Options > Global > General, "Check for updates at start". The full policy is in
 
 ## License and credits
 
-TraceDraw is dual-licensed under [MIT](LICENSE-MIT) or
+DrawCraft is dual-licensed under [MIT](LICENSE-MIT) or
 [Apache-2.0](LICENSE-APACHE), at your option.
-Copyright &copy; 2026 TraceDraw members and contributors.
+Copyright &copy; 2026 DrawCraft members and contributors.
 
-Written by the TraceDraw maintainers with Claude Code, Anthropic's AI coding assistant,
+Written with Claude Code, Anthropic's AI coding assistant,
 as co-author: commits it helped write carry a `Co-Authored-By` line, and
 the About box says so too.
 
@@ -521,19 +491,9 @@ Code contributed by others is listed, person by person, in
 Bundled fonts, icons and other assets keep their own open licenses; each
 is listed with its author, source and license in
 [ATTRIBUTION.md](ATTRIBUTION.md). Every drawing in the screenshots was made
-for TraceDraw.
+for DrawCraft.
 
-## Star History
-
-<a href="https://www.star-history.com/?repos=tracedraw%2Ftracedraw&type=date&legend=top-left">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=tracedraw/tracedraw&type=date&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=tracedraw/tracedraw&type=date&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=tracedraw/tracedraw&type=date&legend=top-left" />
- </picture>
-</a>
-
-<sub>TraceDraw is an independent open-source project, not affiliated
+<sub>DrawCraft is an independent open-source project, not affiliated
 with, endorsed by or sponsored by Corel Corporation, Alludo or any other
 software vendor. CorelDRAW is a registered trademark of Corel Corporation.
 <code>.cdr</code> support is implemented independently, from public format
@@ -541,6 +501,6 @@ notes and files the contributors own, for interoperability; no code,
 documentation or content of any other product is used. Other trademarks and
 product names belong to their owners; file format names such as
 <code>.cdr</code>, <code>.ai</code>, <code>.psd</code> and <code>.pdf</code>
-are used only to describe the files TraceDraw reads and writes. The
+are used only to describe the files DrawCraft reads and writes. The
 software is provided "as is", without warranty of any kind, as the
 licenses state.</sub>
