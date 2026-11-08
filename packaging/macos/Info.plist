@@ -2,15 +2,15 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-  <key>CFBundleName</key><string>TraceDraw</string>
-  <key>CFBundleDisplayName</key><string>TraceDraw</string>
-  <key>NSHumanReadableCopyright</key><string>Copyright © 2026 TraceDraw members and contributors</string>
-  <key>CFBundleIdentifier</key><string>dev.tracedraw.app</string>
+  <key>CFBundleName</key><string>DrawCraft</string>
+  <key>CFBundleDisplayName</key><string>DrawCraft</string>
+  <key>NSHumanReadableCopyright</key><string>Copyright © 2026 DrawCraft members and contributors</string>
+  <key>CFBundleIdentifier</key><string>ai.storyteller.drawcraft</string>
   <key>CFBundleVersion</key><string>__VERSION__</string>
   <key>CFBundleShortVersionString</key><string>__VERSION__</string>
   <key>CFBundlePackageType</key><string>APPL</string>
-  <key>CFBundleExecutable</key><string>tracedraw</string>
-  <key>CFBundleIconFile</key><string>tracedraw.icns</string>
+  <key>CFBundleExecutable</key><string>drawcraft</string>
+  <key>CFBundleIconFile</key><string>drawcraft.icns</string>
   <key>LSMinimumSystemVersion</key><string>11.0</string>
   <key>NSHighResolutionCapable</key><true/>
   <!-- Document types name content types, not only extensions: Finder
@@ -22,11 +22,11 @@
   <key>CFBundleDocumentTypes</key>
   <array>
     <dict>
-      <key>CFBundleTypeName</key><string>TraceDraw Document</string>
+      <key>CFBundleTypeName</key><string>DrawCraft Document</string>
       <key>CFBundleTypeRole</key><string>Editor</string>
       <key>LSHandlerRank</key><string>Owner</string>
       <key>LSItemContentTypes</key>
-      <array><string>dev.tracedraw.tdraw</string></array>
+      <array><string>ai.storyteller.drawcraft.tdraw</string><string>dev.tracedraw.tdraw</string></array>
     </dict>
     <dict>
       <key>CFBundleTypeName</key><string>CDR Drawing</string>
