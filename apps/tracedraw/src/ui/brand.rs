@@ -29,7 +29,7 @@ pub fn icon(ctx: &Context) -> Option<TextureHandle> {
 
 /// The embedded 128 px icon as an egui image.
 pub(crate) fn icon_image() -> Option<egui::ColorImage> {
-    let bytes = include_bytes!("../../../../assets/icon/tracedraw-128.png");
+    let bytes = include_bytes!("../../../../assets/icon/drawcraft-128.png");
     let img = image::load_from_memory(bytes).ok()?.to_rgba8();
     let (w, h) = (img.width() as usize, img.height() as usize);
     Some(egui::ColorImage::from_rgba_unmultiplied(
@@ -155,12 +155,12 @@ pub fn curves(painter: &Painter, r: Rect, scale: f32, nodes: &[f32]) {
     }
 }
 
-/// "TraceDraw" laid out in the bold face at `size`: "Trace" in white,
-/// "Draw" in the light blue accent.
+/// "DrawCraft" laid out in the bold face at `size`: "Draw" in white,
+/// "Craft" in the light blue accent.
 pub fn name_galley(painter: &Painter, size: f32) -> Arc<egui::Galley> {
     let mut job = egui::text::LayoutJob::default();
     let font = crate::theme::bold(size);
-    for (part, color) in [("Trace", Color32::WHITE), ("Draw", NAME_ACCENT)] {
+    for (part, color) in [("Draw", Color32::WHITE), ("Craft", NAME_ACCENT)] {
         job.append(
             part,
             0.0,

@@ -90,7 +90,7 @@ pub(crate) const RELEASES: &[Release] = &[
 
 /// The GitHub release page of `version`, with its full list of changes.
 pub(crate) fn release_page(version: &str) -> String {
-    format!("https://github.com/tracedraw/tracedraw/releases/tag/v{version}")
+    format!("https://github.com/drawcraft/drawcraft/releases/tag/v{version}")
 }
 
 /// The heading of a release's row: version, date and title.
@@ -108,7 +108,7 @@ pub fn welcome_screen(app: &mut App, ui: &mut Ui) {
     // The tabs go on to a second line on a narrow screen (#1691).
     ui.horizontal_wrapped(|ui| {
         ui.add_space(24.0);
-        ui.heading(egui::RichText::new("TraceDraw").size(26.0));
+        ui.heading(egui::RichText::new("DrawCraft").size(26.0));
         ui.add_space(30.0);
         for (tab, key) in [
             (WelcomeTab::GetStarted, "welcome.get_started"),
@@ -628,7 +628,7 @@ fn templates(app: &mut App, ui: &mut Ui) {
             ui.strong(tr("welcome.my_templates"));
             if ui.button(tr("welcome.open_template")).clicked() {
                 crate::files::Dialog::new()
-                    .add_filter("TraceDraw template", &["tdt", "tdraw"])
+                    .add_filter("DrawCraft template", &["tdt", "tdraw"])
                     .pick_file(app, |app, p| app.open_as_template(p));
             }
             let dir = crate::settings::config_dir().map(|d| d.join("templates"));
@@ -870,7 +870,7 @@ mod tests {
             assert_eq!(
                 url,
                 format!(
-                    "https://github.com/tracedraw/tracedraw/releases/tag/v{}",
+                    "https://github.com/drawcraft/drawcraft/releases/tag/v{}",
                     r.version
                 )
             );
@@ -878,7 +878,7 @@ mod tests {
         }
         assert_eq!(
             release_page("0.39.0"),
-            "https://github.com/tracedraw/tracedraw/releases/tag/v0.39.0"
+            "https://github.com/drawcraft/drawcraft/releases/tag/v0.39.0"
         );
     }
 

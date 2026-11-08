@@ -2,16 +2,16 @@
 // the fonts bundled into the browser build.
 fn main() {
     web_fonts();
-    println!("cargo:rerun-if-changed=../../assets/icon/tracedraw.ico");
+    println!("cargo:rerun-if-changed=../../assets/icon/drawcraft.ico");
     if std::env::var("CARGO_CFG_TARGET_OS").as_deref() == Ok("windows") {
         let mut res = winresource::WindowsResource::new();
-        res.set_icon("../../assets/icon/tracedraw.ico");
-        res.set("ProductName", "TraceDraw");
-        res.set("FileDescription", "TraceDraw vector editor");
-        res.set("CompanyName", "TraceDraw");
+        res.set_icon("../../assets/icon/drawcraft.ico");
+        res.set("ProductName", "DrawCraft");
+        res.set("FileDescription", "DrawCraft vector editor");
+        res.set("CompanyName", "DrawCraft");
         res.set(
             "LegalCopyright",
-            "Copyright \u{a9} 2026 TraceDraw members and contributors",
+            "Copyright \u{a9} 2026 DrawCraft members and contributors",
         );
         if let Err(e) = res.compile() {
             println!("cargo:warning=could not embed Windows resources: {e}");

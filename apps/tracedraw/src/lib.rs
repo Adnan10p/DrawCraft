@@ -371,7 +371,7 @@ pub fn run() -> eframe::Result<()> {
             .with_inner_size(splash::SIZE)
             .with_decorations(false)
             .with_resizable(true)
-            .with_title("TraceDraw")
+            .with_title("DrawCraft")
     } else {
         splash::main_window_builder(&settings, plain)
     };

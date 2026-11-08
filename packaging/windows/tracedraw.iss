@@ -1,4 +1,4 @@
-﻿; Inno Setup script for TraceDraw. Built by CI on windows-latest.
+; Inno Setup script for TraceDraw. Built by CI on windows-latest.
 ; Variables: /DVersion=x.y.z /DSrcDir=<dir with tracedraw.exe and tracedraw-cli.exe>
 
 #ifndef Version
@@ -10,17 +10,17 @@
 
 [Setup]
 AppId={{7E6E3B5C-4C1E-4F7B-9D7A-2B9D5C1A0E11}
-AppName=TraceDraw
+AppName=DrawCraft
 AppVersion={#Version}
-AppPublisher=TraceDraw
-AppCopyright=Copyright (c) 2026 TraceDraw members and contributors
-AppPublisherURL=https://github.com/tracedraw/tracedraw
-DefaultDirName={autopf}\TraceDraw
-DefaultGroupName=TraceDraw
-UninstallDisplayIcon={app}\tracedraw.exe
+AppPublisher=DrawCraft
+AppCopyright=Copyright (c) 2026 DrawCraft members and contributors
+AppPublisherURL=https://github.com/drawcraft/drawcraft
+DefaultDirName={autopf}\DrawCraft
+DefaultGroupName=DrawCraft
+UninstallDisplayIcon={app}\drawcraft.exe
 OutputDir=..\..\dist
-OutputBaseFilename=tracedraw-{#Version}-windows-x86_64-setup
-SetupIconFile=..\..\assets\icon\tracedraw.ico
+OutputBaseFilename=drawcraft-{#Version}-windows-x86_64-setup
+SetupIconFile=..\..\assets\icon\drawcraft.ico
 Compression=lzma2
 SolidCompression=yes
 WizardStyle=modern
@@ -122,7 +122,7 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Name: "addtopath"; Description: "{cm:AddToPath}"; GroupDescription: "{cm:CommandLine}"
 
 [Files]
-Source: "{#SrcDir}\tracedraw.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#SrcDir}\drawcraft.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "{#SrcDir}\tracedraw-cli.exe"; DestDir: "{app}"; Flags: ignoreversion
 ; Explorer thumbnails of .tdraw drawings (the first page)
 Source: "{#SrcDir}\tracedraw_thumbnailer.dll"; DestDir: "{app}"; Flags: ignoreversion restartreplace uninsrestartdelete
@@ -131,16 +131,16 @@ Source: "..\..\LICENSE-MIT"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\..\LICENSE-APACHE"; DestDir: "{app}"; Flags: ignoreversion
 
 [Icons]
-Name: "{group}\TraceDraw"; Filename: "{app}\tracedraw.exe"
-Name: "{group}\{cm:UninstallProgram,TraceDraw}"; Filename: "{uninstallexe}"
-Name: "{autodesktop}\TraceDraw"; Filename: "{app}\tracedraw.exe"; Tasks: desktopicon
+Name: "{group}\DrawCraft"; Filename: "{app}\drawcraft.exe"
+Name: "{group}\{cm:UninstallProgram,DrawCraft}"; Filename: "{uninstallexe}"
+Name: "{autodesktop}\DrawCraft"; Filename: "{app}\drawcraft.exe"; Tasks: desktopicon
 
 [Registry]
 ; .tdraw file association
-Root: HKA; Subkey: "Software\Classes\.tdraw"; ValueType: string; ValueName: ""; ValueData: "TraceDraw.Document"; Flags: uninsdeletevalue
-Root: HKA; Subkey: "Software\Classes\TraceDraw.Document"; ValueType: string; ValueName: ""; ValueData: "TraceDraw Document"; Flags: uninsdeletekey
-Root: HKA; Subkey: "Software\Classes\TraceDraw.Document\DefaultIcon"; ValueType: string; ValueName: ""; ValueData: "{app}\tracedraw.exe,0"
-Root: HKA; Subkey: "Software\Classes\TraceDraw.Document\shell\open\command"; ValueType: string; ValueName: ""; ValueData: """{app}\tracedraw.exe"" ""%1"""
+Root: HKA; Subkey: "Software\Classes\.tdraw"; ValueType: string; ValueName: ""; ValueData: "DrawCraft.Document"; Flags: uninsdeletevalue
+Root: HKA; Subkey: "Software\Classes\DrawCraft.Document"; ValueType: string; ValueName: ""; ValueData: "DrawCraft Document"; Flags: uninsdeletekey
+Root: HKA; Subkey: "Software\Classes\DrawCraft.Document\DefaultIcon"; ValueType: string; ValueName: ""; ValueData: "{app}\drawcraft.exe,0"
+Root: HKA; Subkey: "Software\Classes\DrawCraft.Document\shell\open\command"; ValueType: string; ValueName: ""; ValueData: """{app}\drawcraft.exe"" ""%1"""
 ; Explorer shows a .tdraw file as a picture of its first page: the
 ; thumbnail provider in tracedraw_thumbnailer.dll (apps/tracedraw-thumbnailer)
 Root: HKA; Subkey: "Software\Classes\CLSID\{{6B1E5D3A-2F41-4C8E-9B7A-1D2C3E4F5A60}"; ValueType: string; ValueName: ""; ValueData: "TraceDraw thumbnails"; Flags: uninsdeletekey

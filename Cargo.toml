@@ -20,10 +20,10 @@ members = [
 [workspace.package]
 version = "0.41.0"
 edition = "2021"
-authors = ["TraceDraw members and contributors"]
+authors = ["DrawCraft members and contributors"]
 license = "MIT OR Apache-2.0"
-repository = "https://github.com/tracedraw/tracedraw"
-homepage = "https://github.com/tracedraw/tracedraw"
+repository = "https://github.com/drawcraft/drawcraft"
+homepage = "https://github.com/drawcraft/drawcraft"
 rust-version = "1.89"
 
 [workspace.dependencies]

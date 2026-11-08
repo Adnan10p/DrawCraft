@@ -403,7 +403,7 @@ fn root_frame(app: &mut App, ui: &mut Ui) {
     } else {
         tr("welcome.title")
     };
-    set_window_title(&ctx, format!("TraceDraw - {doc_name}"));
+    set_window_title(&ctx, format!("DrawCraft - {doc_name}"));
 
     // Leaving the page with unsaved drawings: the browser asks first.
     #[cfg(target_arch = "wasm32")]

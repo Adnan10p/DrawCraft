@@ -6,10 +6,10 @@ license.workspace = true
 authors.workspace = true
 repository.workspace = true
 homepage.workspace = true
-description = "TraceDraw: an open-source vector illustration editor"
+description = "DrawCraft: an open-source vector illustration editor"
 
 [[bin]]
-name = "tracedraw"
+name = "drawcraft"
 path = "src/main.rs"
 
 # The whole app is the library (the program is a thin `main`; on Android
@@ -144,16 +144,16 @@ ttf-parser.workspace = true
 tracedraw-core = { workspace = true, features = ["test-profiles"] }
 
 [package.metadata.deb]
-name = "tracedraw"
-maintainer = "TraceDraw contributors <contact@tracedraw.org>"
-copyright = "2026, TraceDraw members and contributors"
+name = "drawcraft"
+maintainer = "DrawCraft contributors <contact@drawcraft.org>"
+copyright = "2026, DrawCraft members and contributors"
 license-file = ["../../LICENSE-MIT", "0"]
 extended-description = "Open-source vector illustration editor with a classic desktop workflow and a .cdr reader."
 section = "graphics"
 priority = "optional"
 depends = "$auto"
 assets = [
-    ["target/release/tracedraw", "usr/bin/", "755"],
+    ["target/release/drawcraft", "usr/bin/", "755"],
     ["target/release/tracedraw-cli", "usr/bin/", "755"],
     ["../../packaging/linux/tracedraw.desktop", "usr/share/applications/", "644"],
     ["../../packaging/linux/tracedraw-mime.xml", "usr/share/mime/packages/tracedraw.xml", "644"],
