@@ -4395,10 +4395,10 @@ fn help_menu(app: &mut App, ui: &mut Ui) {
         app.options_page = crate::ui::dialogs::OptionsPage::General;
     }
     if item(ui, "menu.help.community", "", true) {
-        app.open_url("https://github.com/drawcraft/drawcraft/discussions");
+        app.open_url("https://github.com/Adnan10p/DrawCraft/discussions");
     }
     if item(ui, "menu.help.support", "", true) {
-        app.open_url("https://github.com/drawcraft/drawcraft/issues");
+        app.open_url("https://github.com/Adnan10p/DrawCraft/issues");
     }
     sep(ui);
     if item(ui, "menu.help.about", "", true) {

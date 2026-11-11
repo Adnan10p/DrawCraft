@@ -22,8 +22,8 @@ version = "0.41.0"
 edition = "2021"
 authors = ["DrawCraft members and contributors"]
 license = "MIT OR Apache-2.0"
-repository = "https://github.com/drawcraft/drawcraft"
-homepage = "https://github.com/drawcraft/drawcraft"
+repository = "https://github.com/Adnan10p/DrawCraft"
+homepage = "https://github.com/Adnan10p/DrawCraft"
 rust-version = "1.89"
 
 [workspace.dependencies]

@@ -161,8 +161,8 @@ mod tests {
     fn the_bundle_is_named_and_versioned() {
         let plist = plist();
         let get = |key: &str| plist.get(key).and_then(Value::str);
-        assert_eq!(get("CFBundleIdentifier"), Some("dev.tracedraw.app"));
-        assert_eq!(get("CFBundleExecutable"), Some("tracedraw"));
+        assert_eq!(get("CFBundleIdentifier"), Some("ai.storyteller.drawcraft"));
+        assert_eq!(get("CFBundleExecutable"), Some("drawcraft"));
         assert_eq!(get("CFBundlePackageType"), Some("APPL"));
         assert_eq!(get("CFBundleVersion"), Some("__VERSION__"));
         assert!(BUILD.contains("s/__VERSION__/$VERSION/g"));

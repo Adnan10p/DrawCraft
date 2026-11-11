@@ -1,0 +1,136 @@
+# Copy this file to `.github/workflows/release.yml` in the GitHub web UI
+# (or commit it with a PAT that has the `workflow` scope), then either push
+# a tag like `v0.41.0` or run Actions -> Release -> Run workflow.
+#
+# Output asset names match ArtCraft Launcher's package naming rules:
+# - drawcraft-<ver>-windows-x64-portable.zip
+# - drawcraft-<ver>-linux-x86_64.AppImage
+# - drawcraft-<ver>-linux-x86_64.tar.gz
+# - drawcraft-<ver>-macos-arm64.dmg
+# - drawcraft-<ver>-macos-x86_64.dmg
+# - SHA256SUMS.txt
+
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag to create and publish (e.g. v0.41.0)"
+        required: true
+        default: "v0.41.0"
+
+permissions:
+  contents: write
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  version:
+    runs-on: ubuntu-latest
+    outputs:
+      tag: ${{ steps.ver.outputs.tag }}
+      version: ${{ steps.ver.outputs.version }}
+    steps:
+      - id: ver
+        shell: bash
+        run: |
+          TAG="${{ inputs.tag || github.ref_name }}"
+          VER="${TAG#v}"
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+          echo "version=$VER" >> "$GITHUB_OUTPUT"
+
+  build:
+    needs: version
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-latest
+            target: x86_64-pc-windows-msvc
+            name: windows-x64
+          - os: ubuntu-22.04
+            target: x86_64-unknown-linux-gnu
+            name: linux-x86_64
+          - os: macos-latest
+            target: aarch64-apple-darwin
+            name: macos-arm64
+          - os: macos-latest
+            target: x86_64-apple-darwin
+            name: macos-x86_64
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@1.97.0
+        with:
+          targets: ${{ matrix.target }}
+      - uses: Swatinem/rust-cache@v2
+
+      - name: Install Linux dependencies
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pkg-config libxkbcommon-dev libwayland-dev libgl1-mesa-dev \
+            libx11-dev libxcursor-dev libxrandr-dev libxi-dev libgtk-3-dev fuse libfuse2
+
+      - name: Build release binary
+        run: cargo build --release -p tracedraw --bin drawcraft --target ${{ matrix.target }}
+
+      - name: Package (Windows)
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force dist | Out-Null
+          $src = "target\${{ matrix.target }}\release"
+          Copy-Item -Recurse -Force packaging\windows\portable\tracedraw-settings "$src\tracedraw-settings"
+          Compress-Archive -Path "$src\drawcraft.exe","$src\tracedraw-settings",README.md,LICENSE-MIT,LICENSE-APACHE -DestinationPath "dist\drawcraft-${{ needs.version.outputs.version }}-windows-x64-portable.zip"
+
+      - name: Package (Linux)
+        if: runner.os == 'Linux'
+        run: |
+          mkdir -p dist tree/bin tree/share/applications tree/share/icons/hicolor/256x256/apps
+          BIN="target/${{ matrix.target }}/release"
+          packaging/linux/build-appimage.sh "${{ needs.version.outputs.version }}" "$BIN" x86_64
+          rm -f dist/linuxdeploy.AppImage
+          cp "$BIN/drawcraft" tree/bin/drawcraft
+          ln -sf drawcraft tree/bin/tracedraw
+          cp packaging/linux/tracedraw.desktop tree/share/applications/drawcraft.desktop
+          cp assets/icon/drawcraft-256.png tree/share/icons/hicolor/256x256/apps/tracedraw.png
+          tar -C tree -czf "dist/drawcraft-${{ needs.version.outputs.version }}-linux-x86_64.tar.gz" bin share
+
+      - name: Package (macOS)
+        if: runner.os == 'macOS'
+        run: |
+          mkdir -p dist
+          arch=$([[ "${{ matrix.target }}" == aarch64* ]] && echo arm64 || echo x86_64)
+          packaging/macos/build-dmg.sh "${{ needs.version.outputs.version }}" "target/${{ matrix.target }}/release" "$arch"
+          rm -rf dist/DrawCraft.app
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dist-${{ matrix.name }}
+          path: dist/*
+          if-no-files-found: error
+
+  publish:
+    needs: [version, build]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+          merge-multiple: true
+
+      - name: Generate SHA256SUMS.txt
+        working-directory: artifacts
+        run: sha256sum * > SHA256SUMS.txt
+
+      - name: Publish GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ needs.version.outputs.tag }}
+          name: DrawCraft ${{ needs.version.outputs.tag }}
+          files: artifacts/*

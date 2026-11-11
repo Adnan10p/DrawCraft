@@ -26,7 +26,7 @@
       <key>CFBundleTypeRole</key><string>Editor</string>
       <key>LSHandlerRank</key><string>Owner</string>
       <key>LSItemContentTypes</key>
-      <array><string>ai.storyteller.drawcraft.tdraw</string><string>dev.tracedraw.tdraw</string></array>
+      <array><string>dev.tracedraw.tdraw</string></array>
     </dict>
     <dict>
       <key>CFBundleTypeName</key><string>CDR Drawing</string>
@@ -43,8 +43,8 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key><string>dev.tracedraw.tdraw</string>
-      <key>UTTypeDescription</key><string>TraceDraw Document</string>
-      <key>UTTypeIconFile</key><string>tracedraw.icns</string>
+      <key>UTTypeDescription</key><string>DrawCraft Document</string>
+      <key>UTTypeIconFile</key><string>drawcraft.icns</string>
       <key>UTTypeConformsTo</key>
       <array><string>public.data</string><string>public.content</string></array>
       <key>UTTypeTagSpecification</key>

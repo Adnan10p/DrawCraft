@@ -90,7 +90,7 @@ pub(crate) const RELEASES: &[Release] = &[
 
 /// The GitHub release page of `version`, with its full list of changes.
 pub(crate) fn release_page(version: &str) -> String {
-    format!("https://github.com/drawcraft/drawcraft/releases/tag/v{version}")
+    format!("https://github.com/Adnan10p/DrawCraft/releases/tag/v{version}")
 }
 
 /// The heading of a release's row: version, date and title.
@@ -870,7 +870,7 @@ mod tests {
             assert_eq!(
                 url,
                 format!(
-                    "https://github.com/drawcraft/drawcraft/releases/tag/v{}",
+                    "https://github.com/Adnan10p/DrawCraft/releases/tag/v{}",
                     r.version
                 )
             );
@@ -878,7 +878,7 @@ mod tests {
         }
         assert_eq!(
             release_page("0.39.0"),
-            "https://github.com/drawcraft/drawcraft/releases/tag/v0.39.0"
+            "https://github.com/Adnan10p/DrawCraft/releases/tag/v0.39.0"
         );
     }
 
