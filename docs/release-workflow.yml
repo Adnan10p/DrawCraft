@@ -93,7 +93,7 @@ jobs:
         run: |
           mkdir -p dist tree/bin tree/share/applications tree/share/icons/hicolor/256x256/apps
           BIN="target/${{ matrix.target }}/release"
-          packaging/linux/build-appimage.sh "${{ needs.version.outputs.version }}" "$BIN" x86_64
+          bash packaging/linux/build-appimage.sh "${{ needs.version.outputs.version }}" "$BIN" x86_64
           rm -f dist/linuxdeploy.AppImage
           cp "$BIN/drawcraft" tree/bin/drawcraft
           ln -sf drawcraft tree/bin/tracedraw
@@ -106,7 +106,7 @@ jobs:
         run: |
           mkdir -p dist
           arch=$([[ "${{ matrix.target }}" == aarch64* ]] && echo arm64 || echo x86_64)
-          packaging/macos/build-dmg.sh "${{ needs.version.outputs.version }}" "target/${{ matrix.target }}/release" "$arch"
+          bash packaging/macos/build-dmg.sh "${{ needs.version.outputs.version }}" "target/${{ matrix.target }}/release" "$arch"
           rm -rf dist/DrawCraft.app
 
       - uses: actions/upload-artifact@v4
@@ -132,6 +132,7 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ needs.version.outputs.tag }}
+          target_commitish: ${{ github.sha }}
           name: DrawCraft ${{ needs.version.outputs.tag }}
           files: artifacts/*
 
